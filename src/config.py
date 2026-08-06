@@ -47,8 +47,7 @@ GRUPOS_CONFUNDIBLES = {
 # ------------------------------------------------------------
 IMGS_POR_CLASE = 600
 RESOLUCION = 64
-RESOLUCION_ALTA = 96
-CANALES = 3
+CANALES = 1
 FORMA_ENTRADA = (RESOLUCION, RESOLUCION, CANALES)
 
 # ------------------------------------------------------------
