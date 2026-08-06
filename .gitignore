@@ -9,7 +9,6 @@ data/processed/*
 !data/own_signs/
 
 # ---- Modelos entrenados ----
-# models/ y resultados/ SI se versionan: pueden pedirlos al calificar
 
 # ---- Python ----
 __pycache__/
