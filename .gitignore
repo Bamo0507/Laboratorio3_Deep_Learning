@@ -1,0 +1,30 @@
+# ---- Datos ----
+# El dataset crudo NO se versiona: ~87k imagenes, >1GB.
+# Se reproduce con la semilla de config.py + manifest.csv
+data/raw/
+data/processed/
+data/interim/
+
+# EXCEPCION: las fotos propias del grupo si se versionan.
+# No se pueden volver a descargar de ningun lado.
+!data/own_signs/
+
+# ---- Modelos entrenados ----
+*.h5
+*.keras
+*.pt
+*.pth
+models/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- Sistema / editor ----
+.DS_Store
+.vscode/
+.idea/
