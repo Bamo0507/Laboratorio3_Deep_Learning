@@ -9,11 +9,6 @@ data/processed/*
 !data/own_signs/
 
 # ---- Modelos entrenados ----
-*.h5
-*.keras
-*.pt
-*.pth
-models/
 
 # ---- Python ----
 __pycache__/
