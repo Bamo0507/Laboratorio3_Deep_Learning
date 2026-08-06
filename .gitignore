@@ -1,12 +1,11 @@
 # ---- Datos ----
-# El dataset crudo NO se versiona: ~87k imagenes, >1GB.
-# Se reproduce con la semilla de config.py + manifest.csv
 data/raw/
-data/processed/
 data/interim/
 
-# EXCEPCION: las fotos propias del grupo si se versionan.
-# No se pueden volver a descargar de ningun lado.
+# el "*" es necesario para poder reincluir el csv de particiones
+data/processed/*
+!data/processed/01_particiones.csv
+
 !data/own_signs/
 
 # ---- Modelos entrenados ----

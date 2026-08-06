@@ -14,7 +14,7 @@ RUTA_TRAIN_CRUDO = DIR_RAW / "asl_alphabet_train"
 RUTA_TEST_CRUDO = DIR_RAW / "asl_alphabet_test"
 RUTA_SENAS_PROPIAS = RAIZ / "data" / "own_signs"
 
-RUTA_MANIFEST = DIR_PROCESSED / "01_manifest.csv"
+RUTA_PARTICIONES = DIR_PROCESSED / "01_particiones.csv"
 RUTA_TENSORES = DIR_PROCESSED / "02_tensores.npz"
 
 # ------------------------------------------------------------
