@@ -9,11 +9,7 @@ data/processed/*
 !data/own_signs/
 
 # ---- Modelos entrenados ----
-*.h5
-*.keras
-*.pt
-*.pth
-models/
+# models/ y resultados/ SI se versionan: pueden pedirlos al calificar
 
 # ---- Python ----
 __pycache__/

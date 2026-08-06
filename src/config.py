@@ -17,6 +17,9 @@ RUTA_SENAS_PROPIAS = RAIZ / "data" / "own_signs"
 RUTA_PARTICIONES = DIR_PROCESSED / "01_particiones.csv"
 RUTA_TENSORES = DIR_PROCESSED / "02_tensores.npz"
 
+DIR_MODELOS = RAIZ / "models"
+DIR_RESULTADOS = RAIZ / "resultados"
+
 # ------------------------------------------------------------
 # Reproducibilidad
 # ------------------------------------------------------------
@@ -60,6 +63,6 @@ PROP_TEST = 0.15
 # ------------------------------------------------------------
 # Entrenamiento
 # ------------------------------------------------------------
-BATCH_SIZE = 64
-EPOCAS = 20
+MAX_EPOCAS = 30
 PACIENCIA = 4
+METRICA_SELECCION = "val_accuracy"
