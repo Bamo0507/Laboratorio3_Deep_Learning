@@ -4,7 +4,7 @@
   "familia": "keras",
   "accuracy": 0.13218390804597702,
   "particion": "val",
-  "tiempo_entrenamiento_seg": 24.2,
+  "tiempo_entrenamiento_seg": 69.1,
   "epocas_corridas": 17,
   "batch_size": 64,
   "semilla": 123,
