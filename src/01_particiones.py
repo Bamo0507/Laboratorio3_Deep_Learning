@@ -80,7 +80,7 @@ def submuestrear_y_partir(por_clase):
 
 
 def validar_salida(df):
-    """Contrato de salida: sin duplicados, estratificado y del tamano esperado."""
+    """Contrato de salida: sin duplicados, estratificado y del tamaño esperado."""
     esperado = cfg.NUM_CLASES * cfg.IMGS_POR_CLASE
     afirmar(len(df) == esperado, f"la submuestra tiene {len(df)} filas")
     afirmar(df["ruta"].nunique() == len(df), "no hay rutas duplicadas")

@@ -22,6 +22,7 @@ DIR_SRC = Path(__file__).resolve().parent
 ETAPAS = [
     "01_particiones.py",
     "02_preprocesamiento.py",
+    "03_augmentation.py",
 ]
 
 

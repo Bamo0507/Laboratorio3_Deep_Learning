@@ -16,6 +16,7 @@ RUTA_SENAS_PROPIAS = RAIZ / "data" / "own_signs"
 
 RUTA_PARTICIONES = DIR_PROCESSED / "01_particiones.csv"
 RUTA_TENSORES = DIR_PROCESSED / "02_tensores.npz"
+RUTA_TENSORES_AUMENTADOS = DIR_PROCESSED / "03_tensores_aumentados.npz"
 
 DIR_MODELOS = RAIZ / "models"
 DIR_RESULTADOS = RAIZ / "resultados"
@@ -66,3 +67,13 @@ PROP_TEST = 0.15
 MAX_EPOCAS = 30
 PACIENCIA = 4
 METRICA_SELECCION = "val_accuracy"
+
+# ------------------------------------------------------------
+# Aumento de datos
+# ------------------------------------------------------------
+FACTOR_AUMENTO = 1
+ROTACION_GRADOS = 10
+ZOOM_MAX = 0.10
+DESPLAZAMIENTO_MAX = 0.10
+BRILLO_MAX = 0.20
+CONTRASTE_MAX = 0.20

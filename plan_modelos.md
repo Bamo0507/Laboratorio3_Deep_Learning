@@ -23,7 +23,7 @@ La razon de separarlo asi es que el enunciado pide probar varias configuraciones
 hasta encontrar la mejor, de tal forma que los hiperparametros deben poder variar;
 no obstante, si tambien variara el presupuesto de entrenamiento no se podria saber
 si un modelo gano por su arquitectura o simplemente porque se entreno mas tiempo.
-Bajo esta idea, se fija el presupuesto y se libera el diseno.
+Bajo esta idea, se fija el presupuesto y se libera el diseño.
 
 La seleccion entre variantes se hace sobre **validacion**. La particion de prueba
 se reserva y se usa una sola vez, en la etapa de comparacion entre las tres familias
@@ -40,7 +40,7 @@ otro, y en este caso no ocurre ninguna de las dos cosas: el dataset tiene exacta
 3,000 imagenes por clase, y confundir una letra con otra tiene el mismo costo sin
 importar cual sea el par, ya que no hay una clase "positiva" cuyo falso positivo
 implique un riesgo distinto al de un falso negativo. Dicho esto, la accuracy resume
-el desempeno de forma honesta y la matriz de confusion aporta el detalle por clase,
+el desempeño de forma honesta y la matriz de confusion aporta el detalle por clase,
 que es donde realmente interesa mirar, ya que ahi se ve si el error se concentra en
 los grupos visualmente similares.
 
@@ -71,7 +71,7 @@ Sobre la mejor de las dos se probaran variaciones de learning rate y batch size.
 Una red *fully-connected* que recibe la imagen aplanada, con una o dos capas ocultas.
 Su proposito no es competir sino servir de linea base: al aplanar la imagen se destruye
 la relacion espacial entre pixeles vecinos, de tal forma que la red pierde la nocion de
-que dos pixeles contiguos forman parte de la misma forma. Comparar su desempeno contra
+que dos pixeles contiguos forman parte de la misma forma. Comparar su desempeño contra
 la CNN permite cuantificar cuanto aporta exactamente la convolucion en este problema,
 en vez de asumirlo.
 
@@ -86,7 +86,7 @@ Random Forest entrena varios arboles y cada uno trabaja sobre una muestra distin
 conjunto de datos, de tal forma que cada arbol termina fijandose en aspectos diferentes
 de las imagenes y la decision final se toma combinando todos. Bajo esta idea, creo que
 esto puede resultar util para poder aprender de mejor manera los diversos patrones que
-hay que identificar en las senas, ya que las letras no se distinguen todas por lo mismo:
+hay que identificar en las señas, ya que las letras no se distinguen todas por lo mismo:
 unas se diferencian por la posicion del pulgar, otras por cuantos dedos estan extendidos
 y otras por la orientacion de la mano.
 
@@ -95,7 +95,7 @@ y otras por la orientacion de la mano.
 ## Plan de transformaciones (ejercicio 7)
 
 El enunciado pregunta por que un flip horizontal podria cambiar el significado de una
-sena en vez de solo aumentar los datos. La respuesta corta es que una sena no es una
+seña en vez de solo aumentar los datos. La respuesta corta es que una seña no es una
 figura simetrica cualquiera: esta hecha con una mano especifica y su imagen espejo
 corresponde a la otra mano.
 
@@ -112,6 +112,6 @@ Transformaciones que se descartan:
 
 | Transformacion | Por que no |
 |---|---|
-| Flip horizontal | Convierte la sena en su version con la otra mano, y el dataset completo esta hecho con una sola mano |
+| Flip horizontal | Convierte la seña en su version con la otra mano, y el dataset completo esta hecho con una sola mano |
 | Flip vertical | Produce una mano invertida, una pose que no ocurre en el uso real |
 | Rotacion fuerte | Con giros grandes la orientacion deja de ser reconocible y algunas letras se acercan visualmente a otras |

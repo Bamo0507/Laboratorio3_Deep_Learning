@@ -2,7 +2,7 @@
 Modulo compartido de entrenamiento y evaluacion.
 
 Fija el protocolo comun a TODOS los modelos del laboratorio para que la comparacion
-final aisle el diseno del modelo y no el presupuesto de entrenamiento:
+final aisle el diseño del modelo y no el presupuesto de entrenamiento:
 
   Fijo   : datos, semilla, tope de epocas, EarlyStopping, metricas, formato de salida.
   Libre  : arquitectura, optimizador, learning rate, batch size, regularizacion.
@@ -35,9 +35,9 @@ def fijar_semillas():
     tf.keras.utils.set_random_seed(cfg.SEMILLA)
 
 
-def cargar_tensores():
-    """Lee 02_tensores.npz y devuelve los seis arreglos mas el orden de clases."""
-    datos = np.load(cfg.RUTA_TENSORES, allow_pickle=False)
+def cargar_tensores(ruta=None):
+    """Lee los tensores del pipeline. Sin argumento usa 02_tensores.npz."""
+    datos = np.load(ruta or cfg.RUTA_TENSORES, allow_pickle=False)
     afirmar(datos["x_train"].shape[1:] == cfg.FORMA_ENTRADA, f"entrada {cfg.FORMA_ENTRADA}")
     print(f"[cargado]  tensores -> train {len(datos['x_train'])}, "
           f"val {len(datos['x_val'])}, test {len(datos['x_test'])}")
